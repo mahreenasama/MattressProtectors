@@ -1,0 +1,86 @@
+@media (max-width: 1000px){
+/* header  -------------------------------------- */
+    nav a{
+        display:block;
+    }
+    form{
+        width:100%;
+        padding-left:10px;
+    }
+    #search{
+        width:90%;
+    }
+    /* #search-btn{
+        float: left;
+    } */
+    header{
+        padding-bottom:30px;
+    }
+/* footer ------------------------------------- */
+.footer-div1{
+    display: flex;
+    flex-direction:column;
+    padding-left:20px;
+    /* justify-content: space-between; */
+    /* border: 2px solid yellow; */
+}
+.footer-div2 div{
+    display:block;
+}
+/* home main ------------------------------------- */
+    #main-lower-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    #main-lower-div .grid-item{
+        margin-bottom: 100px;
+    }
+/* products main ------------------------------------- */
+    #main-div-prod{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+/* contact main ------------------------------------- */
+    #seller-cards-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    #obama-div{
+    transform: rotateY(-20deg);
+    }
+    #trump-div{
+        transform: rotateY(20deg);
+        z-index: 1;
+    }
+    #jubiden-div{
+        position: absolute;
+        z-index: 0;
+        margin-top: 0px;
+    }
+    #jubiden-img{
+        height: 250px;
+    }
+    #jubiden-div:hover{
+        z-index: 100;
+    }
+    /* reverse back all things */
+    .card:hover{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .card:hover .seller-img{
+        height: 250px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 800px){
+    #main-div-prod{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    #desc-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+}

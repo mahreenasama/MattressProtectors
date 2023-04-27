@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* header  -------------------------------------- */
+#header-div{
+    width: 70%;
+    margin: auto;
+}
+header{
+    background-color: aliceblue;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 25px;
+    color: black;
+}
+form{
+    display: inline;
+    float: right;
+}
+#search{
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 4px;
+}
+#search-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+.active{
+    background-color: rgb(173,  216, 230, 0.5);
+}
+
+/* main home ------------------------------------- */
+#main-home{
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+#main-div-home{
+    /* width: 70%; */
+    /* margin: auto; */
+    /* display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px; */
+    /* border: 1px solid black; */
+}
+/* main p1 ------------------------------------- */
+#main-img-div{
+    height: 500px;
+    /* grid-column: 1/span 3; */
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid blue; */
+    /* align-items: center; */
+}
+#mainimg{
+    height: 400px;
+    width: 100%;
+}
+main h2{
+    text-align: center;
+} 
+
+/* main p2 internal grid  --------------------------------- */
+#main-lower-div{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    /* justify-content: space-between; */
+    /* border: 1px solid black; */
+    padding-bottom: 20px;
+}
+.griditem{
+    width: 80%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+.griditem:nth-child(2){
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.gridimg{
+    width: 100%;
+    height: 200px;
+}
+.div-name{
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    /* width: 80%; */
+}
+.div-table{
+    /* width: 80%; */
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 20px;
+}
+.div-update{
+    /* width: 80%; */
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+.div-table th,.div-table td{
+    width: 500px;
+    padding: 5px;
+    font-weight: bold;
+}
+.div-table tr:nth-child(even){
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.div-table tr:nth-child(odd){
+    background-color: white;
+}
+
+/* products page -------------------------------------- */
+#main-prod{
+    background-color: gainsboro;
+    /* background-image: url("background.jpg"); */
+    margin-top: -21px;
+}
+#main-div-prod{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    /* border: 1px solid black; */
+}
+#main-prod h1{
+    text-align: center;
+    padding-top: 50px;
+    /* border: 1px solid black; */
+}
+.prod-grid-child{
+    border: 1px solid gray;
+    border-radius: 20px;
+    /* width: 100%; */
+}
+.gridimg-prod{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.show-details-btn{
+    background-color: rgb(255, 255, 255,0.6);
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px ;
+}
+.details-btn{
+    width: 150px;
+    padding: 10px;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+/* description page -------------------------------------- */
+#desc-main #top-h1{
+    padding-top: 50px;
+}
+#desc-main{
+    background-image: url("back4.jpg");
+    background-size: cover;
+    margin-top: -21px;
+}
+#desc-inner{
+    display: flex;
+}
+.desc-inner-divs{
+    width: 50%;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+#upper-img{
+    height: 300px;
+    width: 300px;
+    margin-left: auto;
+    margin-right:auto;
+}
+#lower-img{
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 20px;
+}
+#desc-left-div, #desc-right-div{
+    display:  flex;
+    flex-direction: column;
+}
+#desc-para{
+    margin-top: -10px;
+}
+#desc-right-div hr{
+    color: lightgrey;
+    /* margin-left: -50px; */
+    padding-right: 50px;
+    /* length:100%; */
+    width: 100%;
+}
+#pricing-table{
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+}
+#availability-table td,#availability-table th{
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+}
+#availability-table{
+    border: 2px solid black;
+    width: 55%;
+    margin: auto;
+}
+#pricing-table td,#pricing-table th{
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.desc-tables tr:nth-child(even){
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.desc-tables tr:nth-child(odd){
+    background-color: white;
+}
+#contact-seller-btn{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 55%;
+    padding: 10px;
+}
+#contact-seller-div{
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+/* contact page -------------------------------------- */
+#main-contact{
+    background-image: url("cloud4.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    text-align: center;
+}
+#main-div-contact{
+    background-color:aliceblue;
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#main-div-contact h2{
+    padding: 20px;
+}
+/* connect with us ---------------------*/
+/* #connect-with-us{
+    
+} */
+#connect-with-us form{
+    /* border: 1px solid red; */
+    width: 100%;
+}
+.input{
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+}
+#submit-btn{
+    width: 50%;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+/* our sellers ----------------------- */
+
+#our-sellers{
+    align-items: center;
+    /* height: 600px; */
+}
+#seller-cards-div{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    /* height: 500px; */
+    padding-top: 50px;
+}
+.card{
+    border: 1px solid gray;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px 0px black; 
+    /* box-shadow: h-offset v-offset blur spread color; */
+    margin-left: -25px;
+    margin-right: -25px;
+}
+#obama-div{
+    /* height: 400px; */
+    width: 250px;
+    transform: perspective(800px) rotateY(20deg);
+}
+#trump-div{
+    /* height: 400px; */
+    width: 250px;
+    transform: perspective(800px) rotateY(-20deg);
+}
+#jubiden-div{
+    width: 250px;
+    /* height: 400px; */
+    z-index: 1;
+    /* margin-bottom: -50px; */
+    margin-top: -50px;
+}
+#obama-div:hover{
+    transform: rotateY(-20deg);
+    z-index: 100;
+}
+#trump-div:hover{
+    transform: rotateY(20deg);
+    z-index: 1;
+}
+.card:hover{
+    margin-top: -50px;
+    padding-top: 50px;
+}
+.card:hover .seller-img{
+    height: 300px;
+    margin-top: -50px;
+}
+.name-and-pic{
+    background-color: aliceblue;
+    padding-bottom: 10px;
+    border-radius: 20px 20px 0 0;
+}
+.seller-img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+#jubiden-img{
+    height: 300px;
+    /* margin-top: -50px; */
+}
+.contact-info{
+    background-color: lightgrey;
+    padding: 11px;
+    padding-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+}
+.contact-info table{
+     background-color: darkslategray;
+     color: white;
+}
+.contact-info table td{
+    padding: 10px;
+    font-size: 11px;
+}
+/* email us --------------------------*/
+#email-us{
+    padding: 20px;
+    margin-top: 50px;
+}
+#email-us a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* footer -------------------------------------- */
+footer{
+    background-color: darkslategray;
+    color: white;
+} 
+.footer-div1{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+}
+.footer-div1 .foot{
+    width: 300px;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+.foot:first-child{
+    margin-right:70px;
+    margin-left:20px;
+}
+.footer-div1 a{
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+hr{
+    width: 70%;
+    margin: auto;
+}
+.footer-div2{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.footer-div2 i{
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
